@@ -9,3 +9,5 @@ It supports:
 - Input numbers
 - Label and goto
 - Comments
+
+Based on Let's make a Teeny Tiny compiler tutorial series by [Austin Henley](https://https://austinhenley.com/) 
