@@ -10,6 +10,8 @@ It supports:
 - Label and goto
 - Comments
 
+Example code
+
 ```
 /* simple sl program for fibonacci */
 PRINT "ENTER NUMBER"
