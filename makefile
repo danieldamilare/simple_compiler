@@ -1,8 +1,8 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -g
 
-simple_compiler: lexer.o main.o parser.o dstr.o emit.o
-	$(CC) $(CFLAGS) lexer.o main.o parser.o emit.o dstr.o -o simple_compiler
+simple_compiler: lexer.o main.o parser.o dstr.o emit.o list.o
+	$(CC) $(CFLAGS) lexer.o main.o parser.o emit.o dstr.o list.o -o simple_compiler
 
 lexer.o: lexer.c lexer.h
 	$(CC) $(CFLAGS) -c lexer.c
@@ -18,3 +18,6 @@ dstr.o: dstr.c dstr.h
 
 emit.o: emit.c emit.h
 	$(CC) $(CFLAGS) -c emit.c
+
+list.o: list.c list.h
+	$(CC) $(CFLAGS) -c list.c

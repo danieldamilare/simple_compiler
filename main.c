@@ -18,6 +18,7 @@ int main(int argc, char * argv[]){
     code_file = initialize_code(source, row_count);
     fclose(source_file);
     parse();
+    destroy_code(code_file);
     printf("Parsing completed\n");
 }
 

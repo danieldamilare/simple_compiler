@@ -32,3 +32,8 @@ size_t len(struct dstring * dstr){
 char * get_content(struct dstring * dstr){
     return dstr->content;
 }
+
+void destroy_string(struct dstring * dstr){
+    free(dstr->content);
+    memset(dstr, 0, sizeof(struct dstring));
+}

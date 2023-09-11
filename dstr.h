@@ -11,5 +11,7 @@ void append_string(struct dstring * dest, char * source, size_t len);
 struct dstring * create_string(void);
 size_t len(struct dstring * dstr);
 char * get_content(struct dstring * dstr);
+void destroy_string(struct dstring * dstr);
+
 #endif
 
